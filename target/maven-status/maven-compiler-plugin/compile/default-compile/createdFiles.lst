@@ -1,6 +1,7 @@
 com\esprit\examen\entities\TypeCours.class
 com\esprit\examen\entities\Cours.class
 com\esprit\examen\entities\Formateur.class
+com\esprit\examen\services\FormateurService.class
 com\esprit\examen\controllers\SessionRestController.class
 com\esprit\examen\services\ICoursService.class
 com\esprit\examen\entities\Poste.class

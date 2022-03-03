@@ -1,4 +1,4 @@
-/*package com.esprit.examen.services;
+package com.esprit.examen.services;
 
 import java.util.List;
 
@@ -34,8 +34,8 @@ public class FormateurService implements IFormateurService{
 
 	@Override
 	public Long nombreFormateursImpliquesDansUnCours(TypeCours typeCours) {
-		return formateurRepository.nombreFormateursImpliquesDansUnCours(typeCours);
-		
+		//return formateurRepository.nombreFormateursImpliquesDansUnCours(typeCours);
+		return 0L;
 	}
 
 
@@ -51,4 +51,3 @@ public class FormateurService implements IFormateurService{
 	
 
 }
-*/
