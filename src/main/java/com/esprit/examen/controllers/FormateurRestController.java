@@ -1,4 +1,4 @@
-/*package com.esprit.examen.controllers;
+package com.esprit.examen.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.esprit.examen.entities.Cours;
 import com.esprit.examen.entities.Formateur;
 import com.esprit.examen.entities.TypeCours;
@@ -47,4 +46,4 @@ public class FormateurRestController {
 		Long nombreFormateurs=formateurService.nombreFormateursImpliquesDansUnCours(typeCours);
 		return nombreFormateurs;
 	}
-}*/
+}
