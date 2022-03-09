@@ -16,9 +16,9 @@ import org.apache.logging.log4j.Logger;
 public class FormateurServiceTest {
 	@Autowired
 	FormateurRepository formateurRepository ;
-	private static final Logger l =LogManager.getLogger(CoursServiceTest.class);
+	private static final Logger l =LogManager.getLogger(FormateurServiceTest.class);
 	@Test
-	public void testAddCours() {
+	public void testFormateur() {
 
 		Formateur f = new Formateur();
 		f.setNom("Orabi");
