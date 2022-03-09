@@ -8,7 +8,7 @@ import com.esprit.examen.entities.Cours;
 public interface ICoursService {
 	Long addCours(Cours cours);
 
-	Long modifierCours(Cours cours);
+	long modifierCours(long coursId);
 
 	void supprimerCours(Long coursId);
 	

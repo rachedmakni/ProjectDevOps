@@ -1,6 +1,7 @@
 package com.esprit.examen.services;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,9 @@ public class CoursService implements ICoursService {
 
 	@Autowired
 	CoursRepository coursRepository;
+	@Autowired
+	SessionRepository sessionRepo;
+	
 	@Override
 	public Long addCours(Cours cours) {
 		coursRepository.save(cours);
@@ -23,9 +27,10 @@ public class CoursService implements ICoursService {
 	}
 
 	@Override
-	public Long modifierCours(Cours cours) {
+	public long modifierCours(long coursId) {
+		Cours cours= coursRepository.findById(coursId);
 		coursRepository.save(cours);
-		return cours.getId();
+		return coursId;
 		}
 
 	@Override
@@ -36,16 +41,13 @@ public class CoursService implements ICoursService {
 
 	@Override
 	public List<Cours> getCours() {
-		
-		List<Cours> cours =   coursRepository.findAll();
-		return cours;
+		return coursRepository.findAll();
 	}
 	
 	@Override
 	public void affecterCoursASession(Long coursId, Long sessionId)
 	{
-		/*todo*/
-        
+		
 	}
 
 }
