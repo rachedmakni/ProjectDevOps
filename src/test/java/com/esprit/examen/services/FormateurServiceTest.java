@@ -17,6 +17,8 @@ public class FormateurServiceTest {
 	@Autowired
 	FormateurRepository formateurRepository ;
 	private static final Logger l =LogManager.getLogger(FormateurServiceTest.class);
+	
+	
 	@Test
 	public void testFormateur() {
 
@@ -40,5 +42,6 @@ public class FormateurServiceTest {
 	
 		
 		formateurRepository.delete(f);
+		
 	}
 }
