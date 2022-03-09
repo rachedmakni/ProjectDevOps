@@ -51,9 +51,16 @@ public List<Cours> listeCours() {
 
 @PutMapping("/affecterCoursASession/{coursId}/{sessionId}")
 @ResponseBody
-public String affecterFormateurASession(@PathVariable("coursId")  Long coursId, @PathVariable("sessionId") Long sessionId) {
+public String affecterCoursASession(@PathVariable("coursId")  Long coursId, @PathVariable("sessionId") Long sessionId) {
 	coursService.affecterCoursASession(coursId, sessionId);
 	return "cours affecté correctement";
+}
+
+@PutMapping("/suppCoursASession/{coursId}/{sessionId}")
+@ResponseBody
+public String suppCoursASession(@PathVariable("coursId")  Long coursId, @PathVariable("sessionId") Long sessionId) {
+	coursService.suppCoursASession(coursId, sessionId);
+	return "cours supprimer correctement";
 }
 
 }
