@@ -38,7 +38,7 @@ public class CoursServiceTest {
 		
 		//isEqual
 		assertThat(dataBeforeTest).isEqualTo(dataAfterTest -1);
-		assertTrue(dataBeforeTest==dataAfterTest-1);
+		//assertTrue(dataBeforeTest==dataAfterTest-1);
 		
 		coursRepository.delete(cours);
 	}
