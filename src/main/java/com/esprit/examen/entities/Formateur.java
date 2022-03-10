@@ -11,6 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+
 @Entity
 public class Formateur implements Serializable{
 	private static final long serialVersionUID = 1L;
@@ -109,6 +110,49 @@ public class Formateur implements Serializable{
 	public Formateur() {
 		super();
 	}
+	
+	public Formateur(FormateurRequestModel formateurRequestModel) {
+		formateurRequestModel.id = id;
+		formateurRequestModel.nom = nom;
+		formateurRequestModel.prenom = prenom;
+		formateurRequestModel.poste = poste;
+		formateurRequestModel.contrat = contrat;
+		formateurRequestModel.email = email;
+		formateurRequestModel.password = password;
+	
+	}
+	public class FormateurRequestModel {
+		private Long id;
+		private String nom;
+		private String prenom;
+		@Enumerated(EnumType.STRING)
+		private Poste poste;
+		@Enumerated(EnumType.STRING)
+		private Contrat contrat;
+		private String email;
+		private String password;
+	
+		private Set<Session> sessions;
+		public Long getId() {
+			return id;
+		}
+		public String getNom() {
+			return nom;
+		}
+		public String getPrenom() {
+			return prenom;
+		}
+		public String getEmail() {
+			return email;
+		}
+		public String getPassword() {
+			return password;
+		}
+		public Set<Session> getSessions() {
+			return sessions;
+		}
+	}
+	
 	
 	
 }
