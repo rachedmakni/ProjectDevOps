@@ -13,8 +13,11 @@ import com.esprit.examen.entities.TypeCours;
 public interface FormateurRepository extends JpaRepository<Formateur, Long>{
 
 	
-/*	@Query("")
-	public Long nombreFormateursImpliquesDansUnCours(@Param("typeCours")TypeCours typeCours);*/
+	
+ 	@Query("SELECT count(*) FROM FORMATEUR where TypeCours=:typeCours")
+	public Long nombreFormateursImpliquesDansUnCours(@Param("typeCours")TypeCours typeCours);
+	
+
 	
 
 }
