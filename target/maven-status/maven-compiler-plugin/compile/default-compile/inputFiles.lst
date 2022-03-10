@@ -1,43 +1,20 @@
-<<<<<<< HEAD
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\services\CoursService.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\services\ISessionService.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\services\SessionService.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\controllers\SessionRestController.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\entities\Poste.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\config\LoggingAspect.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\controllers\CoursRestController.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\entities\TypeCours.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\repositories\SessionRepository.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\services\IFormateurService.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\services\ICoursService.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\controllers\FormateurRestController.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\entities\Formateur.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\entities\Cours.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\GesFApplication.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\services\FormateurService.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\repositories\FormateurRepository.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\repositories\CoursRepository.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\entities\Session.java
-C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\main\java\com\esprit\examen\entities\Contrat.java
-=======
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\GesFApplication.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\entities\TypeCours.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\services\ISessionService.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\entities\Cours.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\services\FormateurService.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\services\IFormateurService.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\controllers\FormateurRestController.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\entities\Formateur.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\services\SessionService.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\repositories\FormateurRepository.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\config\LoggingAspect.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\services\ICoursService.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\controllers\CoursRestController.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\controllers\SessionRestController.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\repositories\CoursRepository.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\repositories\SessionRepository.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\services\CoursService.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\entities\Contrat.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\entities\Poste.java
-C:\espritDevops\ProjectDevOps\src\main\java\com\esprit\examen\entities\Session.java
->>>>>>> 782c2eb614c95bc1ff93f2b21f432a67c14e7135
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\controllers\CoursRestController.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\entities\Contrat.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\services\SessionService.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\controllers\SessionRestController.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\repositories\CoursRepository.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\entities\TypeCours.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\services\ICoursService.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\entities\Formateur.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\repositories\SessionRepository.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\services\ISessionService.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\config\LoggingAspect.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\controllers\FormateurRestController.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\entities\Poste.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\GesFApplication.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\services\FormateurService.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\repositories\FormateurRepository.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\entities\Session.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\entities\Cours.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\services\CoursService.java
+C:\New folder\ProjectDevOps\src\main\java\com\esprit\examen\services\IFormateurService.java
