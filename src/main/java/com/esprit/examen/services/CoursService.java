@@ -19,7 +19,7 @@ public class CoursService implements ICoursService {
 	@Autowired
 	SessionRepository sessionRepo;
 	
-	private static final Logger l =LogManager.getLogger(ICoursService.class);
+	private static final Logger l =LogManager.getLogger(CoursService.class);
 	
 	@Override
 	public Long addCours(Cours cours) {

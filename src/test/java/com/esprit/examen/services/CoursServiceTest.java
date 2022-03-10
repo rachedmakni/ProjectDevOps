@@ -13,17 +13,17 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @SpringBootTest
-public class CoursServiceTest {
+ class CoursServiceTest {
 	@Autowired
 	CoursRepository coursRepository ;
 	private static final Logger l =LogManager.getLogger(CoursServiceTest.class);
 	@Test
-	public void testAddCours() {
+	 void testAddCours() {
 
 		Cours cours = new Cours();
 		cours.setDescription("DevOps");
 		cours.setIntitule("Spring : Using JUnit");
-		cours.setTypeCours(TypeCours.Informatique);
+		cours.setTypeCours(TypeCours.INFORMATIQUE);
 		l.info(cours);
 		
 		//before
