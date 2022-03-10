@@ -32,15 +32,16 @@ public Cours ajouterCours(@RequestBody CoursRequestModel coursRequestModel) {
 
 @PutMapping("/modifierCours/{coursId}")
 @ResponseBody
-public long modifierCours(@PathVariable("coursId") long coursId) {
-	coursService.modifierCours(coursId);
-	return coursId;
+public long modifierCours(@RequestBody CoursRequestModel coursRequestModel,@PathVariable("coursId") long coursIdToBeUpdate) {
+	Cours cours = new Cours(coursRequestModel);
+	coursService.modifierCours(cours, coursIdToBeUpdate);
+	return coursIdToBeUpdate;
 
 }
 
 @DeleteMapping("/supprimerCours/{coursId}")
 @ResponseBody
-public void supprimerCours(@PathVariable("coursId") Long coursId) {
+public void supprimerCours(@PathVariable("coursId") long coursId) {
 	coursService.supprimerCours(coursId);
 }
 
@@ -53,14 +54,14 @@ public List<Cours> listeCours() {
 
 @PutMapping("/affecterCoursASession/{coursId}/{sessionId}")
 @ResponseBody
-public String affecterCoursASession(@PathVariable("coursId")  Long coursId, @PathVariable("sessionId") Long sessionId) {
+public String affecterCoursASession(@PathVariable("coursId")  long coursId, @PathVariable("sessionId") long sessionId) {
 	coursService.affecterCoursASession(coursId, sessionId);
 	return "cours affecté correctement";
 }
 
 @PutMapping("/suppCoursASession/{coursId}/{sessionId}")
 @ResponseBody
-public String suppCoursASession(@PathVariable("coursId")  Long coursId, @PathVariable("sessionId") Long sessionId) {
+public String suppCoursASession(@PathVariable("coursId")  long coursId, @PathVariable("sessionId") long sessionId) {
 	coursService.suppCoursASession(coursId, sessionId);
 	return "cours supprimer correctement";
 }
