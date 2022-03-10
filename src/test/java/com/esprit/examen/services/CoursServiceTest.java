@@ -1,7 +1,6 @@
 package com.esprit.examen.services;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.assertTrue;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,17 +13,17 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @SpringBootTest
-public class CoursServiceTest {
+ class CoursServiceTest {
 	@Autowired
 	CoursRepository coursRepository ;
 	private static final Logger l =LogManager.getLogger(CoursServiceTest.class);
 	@Test
-	public void testAddCours() {
+	 void testAddCours() {
 
 		Cours cours = new Cours();
 		cours.setDescription("DevOps");
 		cours.setIntitule("Spring : Using JUnit");
-		cours.setTypeCours(TypeCours.Informatique);
+		cours.setTypeCours(TypeCours.INFORMATIQUE);
 		l.info(cours);
 		
 		//before
@@ -38,7 +37,7 @@ public class CoursServiceTest {
 		
 		//isEqual
 		assertThat(dataBeforeTest).isEqualTo(dataAfterTest -1);
-		assertTrue(dataBeforeTest==dataAfterTest-1);
+		//assertTrue(dataBeforeTest==dataAfterTest-1);
 		
 		coursRepository.delete(cours);
 	}

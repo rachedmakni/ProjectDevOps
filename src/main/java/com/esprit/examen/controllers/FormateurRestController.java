@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import com.esprit.examen.entities.Cours;
 
 import com.esprit.examen.entities.Formateur;
 import com.esprit.examen.entities.TypeCours;

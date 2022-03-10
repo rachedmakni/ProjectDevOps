@@ -69,7 +69,33 @@ public class Cours implements Serializable {
 	}
 	public Cours() {
 		super();
-		// TODO Auto-generated constructor stub
+	}
+	public Cours(CoursRequestModel coursRequestModel) {
+		coursRequestModel.id = id;
+		coursRequestModel.description = description;
+		coursRequestModel.typeCours = typeCours;
+		coursRequestModel.intitule = intitule;
+		coursRequestModel.sessions =sessions;
+	}
+	public class CoursRequestModel {
+		private Long id;
+		private String description;
+		@Enumerated(EnumType.STRING)
+		private TypeCours typeCours;
+		private String intitule;
+		private Set<Session> sessions;
+		public Long getId() {
+			return id;
+		}
+		public String getDescription() {
+			return description;
+		}
+		public String getIntitule() {
+			return intitule;
+		}
+		public Set<Session> getSessions() {
+			return sessions;
+		}
 	}
 	
 	

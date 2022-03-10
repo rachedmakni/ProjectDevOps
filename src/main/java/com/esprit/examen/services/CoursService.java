@@ -1,8 +1,8 @@
 package com.esprit.examen.services;
 
 import java.util.List;
-import java.util.Set;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +16,11 @@ public class CoursService implements ICoursService {
 
 	@Autowired
 	CoursRepository coursRepository;
+	@Autowired
+	SessionRepository sessionRepo;
+	
+	private static final Logger l =LogManager.getLogger(CoursService.class);
+	
 	@Override
 	public Long addCours(Cours cours) {
 		coursRepository.save(cours);
@@ -23,9 +28,10 @@ public class CoursService implements ICoursService {
 	}
 
 	@Override
-	public Long modifierCours(Cours cours) {
+	public long modifierCours(long coursId) {
+		Cours cours= coursRepository.findById(coursId);
 		coursRepository.save(cours);
-		return cours.getId();
+		return coursId;
 		}
 
 	@Override
@@ -36,15 +42,42 @@ public class CoursService implements ICoursService {
 
 	@Override
 	public List<Cours> getCours() {
-		
-		List<Cours> cours =   coursRepository.findAll();
-		return cours;
+		return coursRepository.findAll();
 	}
 	
 	@Override
-	public void affecterCoursASession(Long coursId, Long sessionId)
+	public void affecterCoursASession(long coursId, long sessionId)
 	{
-		/*todo*/
+			if(coursRepository.findById(coursId)!=null) {
+				
+		    	if(sessionRepo.findById(sessionId)!=null) {
+		    	Cours c=coursRepository.findById(coursId);
+		    	Session s=sessionRepo.findById(sessionId);
+		    	c.getSessions().add(s);
+		    	coursRepository.save(c);
+		    	}
+		    	l.info("cant find Session with such id");
+			}
+				l.info("cant find Cours with such id");
+
+        
+	}
+	
+	@Override
+	public void suppCoursASession(long coursId, long sessionId)
+	{
+			if(coursRepository.findById(coursId)!=null) {
+				
+		    	if(sessionRepo.findById(sessionId)!=null) {
+		    	Cours c=coursRepository.findById(coursId);
+		    	Session s=sessionRepo.findById(sessionId);
+		    	c.getSessions().remove(s);
+		    	coursRepository.save(c);
+		    	}
+		    	l.info("cant find Session with such id");
+			}
+				l.info("cant find Cours with such id");
+
         
 	}
 

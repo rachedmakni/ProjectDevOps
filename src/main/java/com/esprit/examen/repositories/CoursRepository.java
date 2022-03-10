@@ -7,5 +7,5 @@ import com.esprit.examen.entities.Cours;
 
 @Repository
 public interface CoursRepository extends JpaRepository<Cours, Long> {
-
+	Cours findById(long id);
 }
