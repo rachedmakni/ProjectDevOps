@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\test\java\com\esprit\examen\services\CoursServiceTest.java
 C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\test\java\com\esprit\examen\services\CoursServiceForToDoTest.java
 C:\ACE\esprit\DevOps\imports\ProjectDevOps\ProjectDevOps\src\test\java\com\esprit\examen\services\FormateurServiceTest.java
+=======
+C:\espritDevops\ProjectDevOps\src\test\java\com\esprit\examen\services\FormateurServiceTest.java
+C:\espritDevops\ProjectDevOps\src\test\java\com\esprit\examen\services\CoursServiceTest.java
+>>>>>>> 782c2eb614c95bc1ff93f2b21f432a67c14e7135

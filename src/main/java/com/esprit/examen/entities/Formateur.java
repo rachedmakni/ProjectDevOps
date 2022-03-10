@@ -108,7 +108,6 @@ public class Formateur implements Serializable{
 	}
 	public Formateur() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	
