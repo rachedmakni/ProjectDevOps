@@ -39,7 +39,7 @@ class CoursServiceTest {
 		// isEqual
 		assertThat(dataBeforeTest).isEqualTo(dataAfterTest - 1);
 		// assertTrue(dataBeforeTest==dataAfterTest-1);
-		coursService.addCours(cours);
+		coursService.supprimerCours(cours.getId());
 	}
 
 	@Test
