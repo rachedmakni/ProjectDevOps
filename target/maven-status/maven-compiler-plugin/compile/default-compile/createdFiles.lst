@@ -16,6 +16,7 @@ com\esprit\examen\repositories\SessionRepository.class
 com\esprit\examen\entities\Cours$CoursRequestModel.class
 com\esprit\examen\controllers\CoursRestController.class
 com\esprit\examen\GesFApplication.class
+com\esprit\examen\entities\Formateur$FormateurRequestModel.class
 com\esprit\examen\config\LoggingAspect.class
 com\esprit\examen\entities\Contrat.class
 com\esprit\examen\repositories\FormateurRepository.class
