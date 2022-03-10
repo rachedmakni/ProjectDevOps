@@ -28,14 +28,14 @@ public class CoursService implements ICoursService {
 	}
 
 	@Override
-	public long modifierCours(long coursId) {
-		Cours cours= coursRepository.findById(coursId);
+	public long modifierCours(Cours cours,long coursIdToBeUpdate) {
+		cours.setId(coursIdToBeUpdate);
 		coursRepository.save(cours);
-		return coursId;
+		return coursIdToBeUpdate;
 		}
 
 	@Override
-	public void supprimerCours(Long coursId) {
+	public void supprimerCours(long coursId) {
 		coursRepository.deleteById(coursId);
 		
 	}
