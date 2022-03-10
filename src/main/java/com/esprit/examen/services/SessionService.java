@@ -14,6 +14,8 @@ public class SessionService implements ISessionService{
 
 	@Autowired
 	SessionRepository sessionRepository;
+	@Autowired
+	FormateurRepository formateurRepository;
 	@Override
 	public Long addSession(Session session) {
 		sessionRepository.save(session);
@@ -33,8 +35,15 @@ public class SessionService implements ISessionService{
 
 	@Override
 	public void affecterFormateurASession(Long formateurId, Long sessionId) {
-			/*todo*/
-		
+		Formateur formateur = formateurRepository.findById(formateurId).get();
+		Session session = sessionRepository.findById(sessionId).get();
+		if (formateur!= null && session!= null){
+			session.setFormateur(formateur);
+			sessionRepository.save(session);
+		}
+		else {
+			throw new RuntimeException("no formateur / session with the given Id");
+		}
 	}
 
 }
