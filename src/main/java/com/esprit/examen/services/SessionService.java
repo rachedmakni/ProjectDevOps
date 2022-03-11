@@ -35,14 +35,19 @@ public class SessionService implements ISessionService{
 
 	@Override
 	public void affecterFormateurASession(Long formateurId, Long sessionId) {
+		if (formateurRepository.findById(formateurId).isPresent()){
 		Formateur formateur = formateurRepository.findById(formateurId).get();
 		Session session = sessionRepository.findById(sessionId).get();
-		if (formateur!= null && session!= null){
+		if (session!= null){
 			session.setFormateur(formateur);
 			sessionRepository.save(session);
 		}
+		else{
+			throw new RuntimeException("no session with the given Id");
+		}
+		}
 		else {
-			throw new RuntimeException("no formateur / session with the given Id");
+			throw new RuntimeException("no formateur with the given Id");
 		}
 	}
 
