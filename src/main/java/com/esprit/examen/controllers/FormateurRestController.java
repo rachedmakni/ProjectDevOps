@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.esprit.examen.entities.Cours;
 
 import com.esprit.examen.entities.Formateur;
+import com.esprit.examen.entities.Formateur.FormateurRequestModel;
 import com.esprit.examen.entities.TypeCours;
 import com.esprit.examen.services.IFormateurService;
 
@@ -23,16 +23,19 @@ public class FormateurRestController {
 	
 	@PostMapping("/ajouterFormateur")
 	@ResponseBody
-	public Formateur ajouterFormateur(@RequestBody Formateur formateur) {
+	public Formateur ajouterFormateur(@RequestBody FormateurRequestModel formateurRequestModel) {
+		Formateur formateur = new Formateur(formateurRequestModel);
 		formateurService.addFormateur(formateur);
 		return formateur;
 	}
-
-	@PutMapping("/modifierFormateur")
+	
+	@PutMapping("/modifierFormateur/")
 	@ResponseBody
-	public Formateur modifierFormateur(@RequestBody Formateur formateur) {
-		formateurService.addFormateur(formateur);
-		return formateur;
+	public Formateur modifierFormateur(@RequestBody FormateurRequestModel formateurRequestModel){
+		Formateur formateur = new Formateur(formateurRequestModel);
+		formateurService.modifierFormateur(formateur);
+			return formateur;
+		
 	}
 
 	@DeleteMapping("/supprimerFormateur/{formateurId}")
